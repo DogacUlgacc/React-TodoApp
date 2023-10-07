@@ -10,6 +10,7 @@ export default function Input({ todos, setTodos }) {
             setTodos([...todos, inputText]);
             setInputText("");
         }
+        localStorage.setItem("todos", JSON.stringify(inputText));
     };
 
     const inputValue = (e) => {
