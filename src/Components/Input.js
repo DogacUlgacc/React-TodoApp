@@ -5,7 +5,6 @@ export default function Input({ todos, setTodos }) {
     const [inputText, setInputText] = useState("");
 
     const addTask = () => {
-        localStorage.setItem("todos", JSON.stringify(inputText));
         if (inputText === "") {
         } else {
             setTodos([...todos, inputText]);
